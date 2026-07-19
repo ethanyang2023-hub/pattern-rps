@@ -149,6 +149,23 @@
       min-height: 24px;
     }
 
+
+    .analysis {
+      margin: 34px 0;
+      padding: 22px;
+      background: rgba(247, 244, 236, 0.92);
+      border-top: 2px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .analysis h2 {
+      margin-bottom: 12px;
+    }
+
+    .analysis p:last-child {
+      margin-bottom: 0;
+    }
+
     .note {
       border-left: 4px solid var(--ink);
       padding-left: 14px;
@@ -221,6 +238,33 @@
 
       <p class="small" id="prediction">
         Current prediction: no pattern yet.
+      </p>
+    </div>
+
+
+    <div class="analysis">
+      <h2>Why this simple rule is interesting</h2>
+
+      <p>
+        Rock-paper-scissors is balanced because every move defeats one move and
+        loses to another. There is no permanently strongest choice.
+      </p>
+
+      <p>
+        A perfectly random player would choose rock, paper, and scissors about
+        equally often. But people often repeat moves, avoid repeating, or switch
+        in recognizable ways.
+      </p>
+
+      <p>
+        This bot does not understand those habits. It only assumes that your most
+        frequent recent move is more likely to appear again. The rule becomes useful
+        only when your choices are uneven.
+      </p>
+
+      <p>
+        The interesting part is the feedback loop: once you see the prediction,
+        you may change your behavior. Then the bot's memory changes too.
       </p>
     </div>
 
